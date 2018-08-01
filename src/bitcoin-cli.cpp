@@ -191,7 +191,7 @@ UniValue CallRPC(const std::string& strMethod, const UniValue& params)
 {
     std::string host = GetArg("-rpcconnect", DEFAULT_RPCCONNECT);
     int port = GetArg("-rpcport", BaseParams().RPCPort());
-
+    
     // Obtain event base
     raii_event_base base = obtain_event_base();
 
